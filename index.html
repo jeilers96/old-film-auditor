@@ -29,8 +29,8 @@
 		</div>
 		
 		
-		<div data-include="theRoomTile"></div>
-		<div data-include="PsychoTile"></div>
+		<div class="tile" data-include="theRoomTile"></div>
+		<div class="tile" data-include="PsychoTile"></div>
 		
 	<style>
 	
@@ -96,15 +96,17 @@
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 			transition: 0.3s;
-			width: 25%;
 			background-color: white;
+		}
+		
+		.tile{
 			display: inline-block;
+			width: 25%;
 			margin-left: 4%;
 			margin-right: 4%;
 			margin-bottom: 2%;
 			margin-top: 3%;
 		}
-
 		.card:hover {
 			box-shadow: 0 15px 21px 0 rgba(0,0,0,0.3);
 		}
