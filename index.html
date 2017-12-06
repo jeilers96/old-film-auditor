@@ -3,16 +3,7 @@
 	<head>
 		<title>The Film Auditor: Home</title>
 		<script src="jquery-3.2.1.js"></script>
-		<script> 
-			$(function(){
-			var includes = $('[tile-include]');
-			jQuery.each(includes, function(){
-			  var file = 'tiles/' + $(this).data('include') + '.html';
-			  $(this).load(file);
-			});
-		  });
-		</script>
-		
+				
 		<script>
 			$(function(){
 			  $("#includedContent").load("tiles/theRoomTile.html"); 
@@ -141,5 +132,14 @@
 			
 		}
 	</style>
+	<script>
+		  $(function(){
+			var includes = $('[tile-include]');
+			jQuery.each(includes, function(){
+			  var file = 'tiles/' + $(this).data('include') + '.html';
+			  $(this).load(file);
+			});
+		  });
+	</script>
 	</body>
 </html>
