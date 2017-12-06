@@ -9,6 +9,15 @@
 			  $("#includedContent").load("tiles/theRoomTile.html"); 
 			});
 		</script>
+		<script>
+		  $(function(){
+			var includes = $('[data-include]');
+			jQuery.each(includes, function(){
+			  var file = 'views/' + $(this).data('include') + '.html';
+			  $(this).load(file);
+			});
+		  });
+		</script>
 	</head>
 	<body>
 		<ul class="nav">
@@ -38,7 +47,8 @@
 			</div>
 		</a>
 		
-		<div tile-include="theRoomTile"></div>
+		<div data-include="header"></div>
+		<div data-include="footer"></div>
 		<div id="includedContent"></div>
 	<style>
 	
@@ -132,14 +142,6 @@
 			
 		}
 	</style>
-	<script>
-		  $(function(){
-			var includes = $('[tile-include]');
-			jQuery.each(includes, function(){
-			  var file = 'tiles/' + $(this).data('include') + '.html';
-			  $(this).load(file);
-			});
-		  });
-	</script>
+	
 	</body>
 </html>
