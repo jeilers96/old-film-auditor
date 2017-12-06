@@ -13,7 +13,7 @@
 		  $(function(){
 			var includes = $('[data-include]');
 			jQuery.each(includes, function(){
-			  var file = 'views/' + $(this).data('include') + '.html';
+			  var file = 'tiles/' + $(this).data('include') + '.html';
 			  $(this).load(file);
 			});
 		  });
@@ -47,8 +47,7 @@
 			</div>
 		</a>
 		
-		<div data-include="header"></div>
-		<div data-include="footer"></div>
+		<div data-include="theRoomTile"></div>
 		<div id="includedContent"></div>
 	<style>
 	
