@@ -1,7 +1,145 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>The Film Auditor: Home</title>
+		<script src="jquery-3.2.1.js"></script>
+		<script> 
+			$(function(){
+			var includes = $('[tile-include]');
+			jQuery.each(includes, function(){
+			  var file = 'tiles/' + $(this).data('include') + '.html';
+			  $(this).load(file);
+			});
+		  });
+		</script>
+		
+		<script>
+			$(function(){
+			  $("#includedContent").load("tiles/theRoomTile.html"); 
+			});
+		</script>
+	</head>
+	<body>
+		<ul class="nav">
+		  <li><a id="active" href="#home">Home</a></li>
+		  <li><a href="#news">About</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li style="float:right"><a href="#about"><img src="images/youtube_icon.png" class="social-icon"></a></li>
+		  <li style="float:right"><a href="#about"><img src="images/twitter_icon.png" class="social-icon"></a></li>
+		</ul>
+
+		<div class="banner">
+			<img src="images/film_auditor_logo.png" class="logo">
+			<img src="images/blog_title.png" class="title">
+		</div>
+		
+		<a href="blog.html" style="text-decoration: none; color: #2A2B2A;">
+			<div class="card">
+				<div class="card-header">
+					December 1, 2017 
+				</div>
+				<img src="images/theRoom.jpg" alt="Avatar" style="width:100%">
+				<div class="card-footer">
+					<h3 style="margin-bottom: 0.3rem;"><b>Throwback Review: The Room</b></h3> 
+					<a href="#" style="font-size: .8rem">Throwback Review</a>
+					<p style="font-size: .9rem">The room is a cult classic film about a love triangle between</p>
+				</div>
+			</div>
+		</a>
+		
+		<div tile-include="theRoomTile"></div>
+		<div id="includedContent"></div>
+	<style>
+	
+		body{
+			background-color: #EAF2E3;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		body,html{
+			margin:0;
+			padding:0;
+			color: #2A2B2A;
+		}
+		.banner{
+			padding: .2%;
+			background-color: #fff48f;
+		}
+		
+		.logo{
+			width: 8%;
+			margin-left: 3.5%;
+			margin-bottom: 1%;
+		}
+		
+		.social-icon{
+			width: 26px;
+			padding: 0;
+		}
+		.title{
+			display: inline-block;
+			width: 40%;
+			margin-right: 29%;
+			margin-left: 18%;
+		}
+		
+		.nav {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #2A2B2A;
+		}
+
+		.nav li {
+			float: left;
+		}
+
+		.nav li a {
+			display: block;
+			color: #EAF2E3;
+			text-align: center;
+			padding: 14px;
+			text-decoration: none;
+		}
+		
+		.nav li a:hover:not(.active) {
+			color: #f04c4c;
+		}
+		
+		#active {
+			color: #f04c4c;
+		}
+		
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: 0.3s;
+			width: 25%;
+			background-color: white;
+			display: inline-block;
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-bottom: 2%;
+			margin-top: 3%;
+		}
+
+		.card:hover {
+			box-shadow: 0 15px 21px 0 rgba(0,0,0,0.3);
+		}
+
+		.card-footer {
+			padding: 2px 16px;
+		}
+		
+		.card-header {
+			padding: 9px 16px;
+			background-color: #FFF48F;
+			font-size: .8rem;
+
+		}
+		
+		.category-type{
+			
+		}
+	</style>
+	</body>
 </html>
