@@ -67,7 +67,7 @@
 	}
 
 	.tile{
-		display: inline-block;
+		display: none;
 		width: 25%;
 		margin-left: 4%;
 		margin-right: 4%;
@@ -134,4 +134,8 @@
 	
 	#activeCat{
 		color: #f04c4c;
+	}
+	
+	.show{
+		display: inline-block;
 	}
