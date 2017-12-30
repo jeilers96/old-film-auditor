@@ -22,11 +22,11 @@
 		
 		
 		<ul class="filter">
-			<li><a class ="catSelector activeCat" href="javascript:filterSelection('All')">All</a></li>
-			<li><a class ="catSelector" href="javascript:filterSelection('Film-Audits')">Film Audits</a></li>
-			<li><a class ="catSelector" href="javascript:filterSelection('Throwback-Audits')">Throwback Audits</a></li>
-			<li><a class ="catSelector" href="javascript:filterSelection('Film-Analyses')">Film Analyses</a></li>
-			<li><a class ="catSelector" href="javascript:filterSelection('Miscellaneous')">Miscellaneous</a></li>
+			<li><a class ="catSelector" id="activeCat" href="javascript:filterSelection('All')">All</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Audits')">Film Audits</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Throwback-Audits')">Throwback Audits</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Analyses')">Film Analyses</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Miscellaneous')">Miscellaneous</a></li>
 		</ul>
 		<div class="tile Film-Audits" data-include="theRoomTile"></div>
 		<div class="tile Film-Audits" data-include="PsychoTile"></div>
@@ -57,9 +57,9 @@
 				catSelectors = document.getElementsByClassName("catSelector");
 				for (i = 0; i < catSelectors.length; i++){
 				  catSelectors[i].addEventListener("click", function(){
-					var current = document.getElementsByClassName("activeCat");
-					current[0].className = current[0].className.replace(" activeCat", "");
-					this.className += " activeCat";
+					var current = document.getElementsByIdName("activeCat");
+					current[0].IdName = current[0].IdName.replace(" activeCat", "");
+					this.IdName += " activeCat";
 				  });
 				}
 			
