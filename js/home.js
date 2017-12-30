@@ -1,5 +1,3 @@
-filterSelection("All");
-setActiveSelection();
 function filterSelection(category){
   var tiles, i;
   tiles = document.getElementsByClassName("tile"); //get all tiles
