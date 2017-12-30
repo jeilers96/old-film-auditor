@@ -57,7 +57,7 @@
 				catSelectors = document.getElementsByClassName("catSelector");
 				for (i = 0; i < catSelectors.length; i++){
 				  catSelectors[i].addEventListener("click", function(){
-					document.getElementById("activeCat").id = "";
+					document.getElementById("activeCat").removeAttribute("id");
 					this.id += " activeCat";
 				  });
 				}
