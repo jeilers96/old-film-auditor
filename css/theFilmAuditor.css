@@ -1,5 +1,4 @@
 	body{
-		background-color: #EAF2E3;
 		font-family: Tahoma, Geneva, sans-serif;
 	}
 	body,html{
@@ -10,14 +9,14 @@
 	.banner{
 		width: 98%;
 		padding: 1%;
-		margin-bottom: 10%;
+		margin-bottom: .5%;
+		margin-top: .5%;
 	}
 
 	.logo{
-		width: 8%;
-		margin-bottom: 1%;
-		float: right;
+		width: 7%;
 		margin-right: 1%;
+		margin-left: 5%;
 	}
 
 	.social-icon{
@@ -26,9 +25,8 @@
 	}
 	.title{
 		display: inline-block;
-		width: 40%;
+		width: 35%;
 		margin-left: 1%;
-		float: left;
 		margin-top: 2%;
 	}
 
@@ -37,7 +35,7 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: #2A2B2A;
+		background-color: #f04c4c;
 	}
 
 	.nav li {
@@ -46,18 +44,19 @@
 
 	.nav li a {
 		display: block;
-		color: #EAF2E3;
+		color: black;
 		text-align: center;
 		padding: 14px;
 		text-decoration: none;
+		font-weight: bold;
 	}
 
 	.nav li a:hover:not(.active) {
-		color: #f04c4c;
+		color: white;
 	}
 
 	#active {
-		color: #f04c4c;
+		color: white;
 	}
 
 	.card {
@@ -94,7 +93,7 @@
 	}
 	.card-header {
 		padding: 9px 16px;
-		background-color: #2A2B2A;
+		background-color: black;
 		font-size: .8rem;
 		color: #EAF2E3;
 	}
@@ -136,4 +135,31 @@
 	
 	.show{
 		display: inline-block;
+	}
+	
+	.footer {
+	   width: 100%;
+	   background-color: black;
+	   color: white;
+	   text-align: center;
+	}
+	
+	.footer p {
+		margin: 0;
+		padding: 13px;
+		font-size: 0.8rem;
+	}
+	.title-box {
+		float: left;
+		width: 100%;
+		background-color: black;
+		color: white;
+	}
+	
+	.second-title {
+		margin: 0;
+		float: left;
+		margin-left: 6%;
+		font-size: 3.3rem;
+		margin-top: 6%;
 	}
