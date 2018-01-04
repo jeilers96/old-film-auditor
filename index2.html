@@ -9,17 +9,55 @@
 	<body>
 	
 		<div class="banner">
-			<img src="images/blog_title.png" class="title">
 			<img src="images/film_auditor_logo.png" class="logo">
+			<img src="images/blog_title.png" class="title">	
 		</div>
 		
 		<ul class="nav">
 		  <li style="margin-left: 8%;"><a id="active" href="index.html">Home</a></li>
 		  <li><a href="about.html">About</a></li>
 		  <li><a href="contact.html">Contact</a></li>
-		  <li style="float:right"><a href="#about"><img src="images/youtube_icon2.png" class="social-icon"></a></li>
-		  <li style="float:right"><a href="#about"><img src="images/twitter_icon2.png" class="social-icon"></a></li>
+		  <li style="float: right; margin-right: 4%;"><a href="#about"><img src="images/youtube_icon2.png" class="social-icon"></a></li>
+		  <li style="float: right;"><a href="#about"><img src="images/twitter_icon2.png" class="social-icon"></a></li>
 		</ul>
-		
+		<div>
+			<div class="title-box">
+				<h1 class="second-title">THE FILM <br>AUDITOR <br><span>Film Lover and Critic</span></h1>
+				<img src="images/movietheatre.jpg" style="width: 50%; float: right;">
+			</div>
+			
+		</div>
+		<ul class="filter">
+			<li><a class ="catSelector" id="activeCat" href="javascript:filterSelection('All')">All</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Audits')">Film Audits</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Throwback-Audits')">Throwback Audits</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Analyses')">Film Analyses</a></li>
+			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Miscellaneous')">Miscellaneous</a></li>
+		</ul>
+		<div>
+			<div class="tile Film-Audits" data-include="theRoomTile"></div>
+			<div class="tile Film-Audits" data-include="PsychoTile"></div>
+			<div class="tile Throwback-Audits" data-include="PsychoTile"></div>
+			<div class="tile Film-Analyses" data-include="theRoomTile"></div>
+			<div class="tile Film-Analyses" data-include="PsychoTile"></div>
+			<div class="tile" data-include="PsychoTile"></div>
+		</div>
+		<style>
+			
+			.title-box {
+				float: left;
+				width: 100%;
+				background-color: black;
+				color: white;
+			}
+			
+			.second-title {
+				margin: 0;
+				float: left;
+				margin-left: 6%;
+				font-size: 3.3rem;
+				margin-top: 3%;
+			}
+		</style>
 	</body>
 </html>
