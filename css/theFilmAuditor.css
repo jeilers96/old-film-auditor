@@ -107,9 +107,9 @@
 		list-style-type: none;
 		margin: 0;
 		overflow: hidden;
-		border-bottom: 2px solid;
-		border-color: #888787;
-		background-color: lightgrey;
+		border-bottom: 3px solid;
+		border-color: #3A3A3A;
+		background-color: dimgrey;
 	}
 
 	.filter li {
@@ -122,15 +122,15 @@
 
 	.filter li a {
 		text-decoration: none;
-		color: #2A2B2A;
+		color: black;
 	}
 	
 	.filter li a:hover:not(#active) {
-		color: #f04c4c;
+		text-decoration: underline;
 	}
 	
 	#activeCat{
-		color: #f04c4c;
+		text-decoration: underline;
 	}
 	
 	.show{
@@ -250,4 +250,10 @@
 		width: 45%;
 		margin-left: 27.5%;
 		margin-right: 27.5%;
+	}
+	
+	.about-favorite-images{
+		width: 15%;
+		margin-right: 2.3%;
+		margin-left: 2.3%;
 	}
