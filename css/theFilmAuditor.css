@@ -291,3 +291,13 @@
 		margin-right: 20%;
 		margin-top: 5%;
 	}
+	
+	.contact-desc {
+		width: 60%;
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+		color: white;
+		padding-bottom: 3%;
+		padding-top: 2%;
+	}
