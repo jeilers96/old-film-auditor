@@ -184,6 +184,10 @@
 		padding-bottom: 5%;
 	}
 	
+	.about-body3 {
+		background-color: black;
+	}
+	
 	.about-body1 p {
 		color: white;
 		text-align: center;
@@ -194,6 +198,25 @@
 	
 	.about-body1 p a{
 		color: #f04c4c;
+	}
+	
+	.about-body3 p {
+		color: white;
+		margin-left: 13%;
+		margin-bottom: 0;
+		padding-bottom: 5%;
+	}
+	.about-body3 p a{
+		color: #f04c4c;
+	}
+	
+	.about-body3 h2 {
+		color: #f04c4c;
+		font-size: 2rem;
+		margin-bottom: 1%;
+		margin-top: 0;
+		padding-top: 4%;
+		margin-left: 12%;
 	}
 	
 	.about-header {
@@ -260,6 +283,11 @@
 		width: 15%;
 		margin-right: 2.3%;
 		margin-left: 2.3%;
+	}
+	
+	#tmdb-image {
+	    width: 16%;
+		margin-left: 15%;
 	}
 	.contact-form {
 		width: 50%;
