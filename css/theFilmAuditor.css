@@ -330,3 +330,77 @@
 		padding-bottom: 3%;
 		padding-top: 2%;
 	}
+	
+	.blog-body {
+		float: left;
+		width: 70%;
+		margin-left: 5%;
+	}
+	
+	.blog-side-bar {
+		float: right;
+		width: 25%;
+		padding-top: 15%;
+	}
+	
+	.blog-side-bar h2 {
+		text-align: center;
+		color: #f04c4c;
+	}
+	#youtube-blog {
+		width: 15%;
+		margin-left: 12%;
+		margin-right: 4%;
+	}
+	
+	#letterboxd-blog {
+		width: 27%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	#twitter-blog {
+		width: 15%;
+		margin-left: 4%;
+		margin-right: 12%;
+	}
+	
+	.blog-title {
+		font-size: 3rem;
+		margin-left: 4%;
+	}
+	
+	.blog-info {
+		margin-left: 6%;
+	}
+	
+	.blog-icon {
+		padding: 8px;
+	}
+	
+	.blog-image {
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 3%;
+		padding-top: 1%;	
+	}
+	.recommended-info {
+		font-size: 0.7rem;
+		margin-bottom: 0;
+	}
+	.recommended {
+		border: 1px solid #ccc;
+		padding: 2%;
+		margin: 5%;
+	}
+	
+	.recommended-link {
+		text-decoration: none;
+		color: black;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
