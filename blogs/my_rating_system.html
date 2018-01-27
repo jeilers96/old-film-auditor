@@ -2,27 +2,26 @@
 <html>
 	<head>
 		<title>The Film Auditor: My Rating System</title>
-		<script src="js/jquery-3.2.1.js"></script>
-		<script src="js/home.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/theFilmAuditor.css">
+		<script src="../js/jquery-3.2.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/theFilmAuditor.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 	
 		<div class="banner">
-			<img src="images/film_auditor_logo.png" class="logo">
-			<img src="images/blog_title.png" class="title">	
+			<img src="../images/film_auditor_logo.png" class="logo">
+			<img src="../images/blog_title.png" class="title">	
 		</div>
 		
 		<ul class="nav">
-		  <li style="margin-left: 8%;"><a id="active" href="index.html">Home</a></li>
-		  <li><a href="about.html">About</a></li>
-		  <li><a href="contact.html">Contact</a></li>
+		  <li style="margin-left: 8%;"><a id="active" href="../index.html">Home</a></li>
+		  <li><a href="../about.html">About</a></li>
+		  <li><a href="../contact.html">Contact</a></li>
 		</ul>
-		<div>
-			<h1>My Rating System</h1>
-			<p>Posted on <i>January 25, 2018</i> miscellaneous</p>
-			<hr>
-			<img src="images/static.jpg">
+		<div class="blog-body">
+			<h1 class="blog-title">My Rating System</h1>
+			<p class="blog-info"><i class="fa fa-calendar blog-icon"></i><i>January 25, 2018</i> <i class="fa fa-film blog-icon"></i>miscellaneous</p>
+			<img src="../images/static.jpg" class="blog-image">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat lacus, laoreet at libero et, congue pharetra enim. Nulla neque est, rutrum in tincidunt a, euismod ut nibh. Morbi id placerat turpis. Donec suscipit lorem lectus, sit amet pretium est lobortis at. Donec in placerat augue. Vivamus auctor, tortor id tincidunt pharetra, tortor dolor blandit ligula, luctus vestibulum ex ex eu ipsum. In at imperdiet turpis, a varius magna. Maecenas finibus eleifend urna sed efficitur.
 			</p>
@@ -35,13 +34,115 @@
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat lacus, laoreet at libero et, congue pharetra enim. Nulla neque est, rutrum in tincidunt a, euismod ut nibh. Morbi id placerat turpis. Donec suscipit lorem lectus, sit amet pretium est lobortis at. Donec in placerat augue. Vivamus auctor, tortor id tincidunt pharetra, tortor dolor blandit ligula, luctus vestibulum ex ex eu ipsum. In at imperdiet turpis, a varius magna. Maecenas finibus eleifend urna sed efficitur.
 			</p>
+		</div>
+		<div class="blog-side-bar">
+			<h2>Recommended For You</h2>
+			<div>
+				<a href="#" class="recommended-link">
+					<div class="recommended">
+						<strong>The Room Movie Review</strong>
+						<p class="recommended-info"><i class="fa fa-calendar blog-icon"></i><i>January 25, 2018</i> <i class="fa fa-film blog-icon"></i>miscellaneous</p>
+					</div>
+				</a>
+				<a href="#" class="recommended-link">
+					<div class="recommended">
+						<strong>Top 10 Best Westerns of All Time</strong>
+						<p class="recommended-info"><i class="fa fa-calendar blog-icon"></i><i>January 29, 2018</i> <i class="fa fa-film blog-icon"></i>lists</p>
+					</div>
+				</a>
+				<a href="#" class="recommended-link">
+					<div class="recommended">
+						<strong>Why I love Boss Baby</strong>
+						<p class="recommended-info"><i class="fa fa-calendar blog-icon"></i><i>January 25, 2018</i> <i class="fa fa-film blog-icon"></i>film review</p>
+					</div>
+				</a>
+			</div>
+			<h2 style="margin-top: 20%;">Follow Me</h2>
+			<div>
+				<a href="https://www.youtube.com/channel/UCaG7UzxGAV4GjDkHBLx_Bnw" target="_blank"><img src="../images/youtube_icon.png" id="youtube-blog" onmouseover="this.src='../images/youtube_icon_light.png';" onmouseout="this.src='../images/youtube_icon.png';"></a>
+				<a href="https://letterboxd.com/TheFilmAuditor/" target="_blank"><img src="../images/letterboxd_icon.png" id="letterboxd-blog" onmouseover="this.src='../images/letterboxd_icon_light.png';" onmouseout="this.src='../images/letterboxd_icon.png';"></a>
+
+				<a href="https://twitter.com/thefilmauditor" target="_blank"><img src="../images/twitter_icon.png" id="twitter-blog" onmouseover="this.src='../images/twitter_icon_light.png';" onmouseout="this.src='../images/twitter_icon.png';"></a>
+			</div>
 		</div>
 		<div class="footer">
 		  <p>The Film Auditor: Created by Josh Eilers <a href="mailto:thefilmauditor@gmail.com">thefilmauditor@gmail.com</a></p>
 		</div>
-		<script>
-			filterSelection("All");
-			setActiveSelection();
-		</script>
 	</body>
+	
+	<style>
+		.blog-body {
+			float: left;
+			width: 70%;
+			margin-left: 5%;
+		}
+		
+		.blog-side-bar {
+			float: right;
+			width: 25%;
+			padding-top: 15%;
+		}
+		
+		.blog-side-bar h2 {
+			text-align: center;
+			color: #f04c4c;
+		}
+		#youtube-blog {
+			width: 15%;
+			margin-left: 12%;
+			margin-right: 4%;
+		}
+		
+		#letterboxd-blog {
+			width: 27%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		
+		#twitter-blog {
+			width: 15%;
+			margin-left: 4%;
+			margin-right: 12%;
+		}
+		
+		.blog-title {
+			font-size: 3rem;
+			margin-left: 4%;
+		}
+		
+		.blog-info {
+			margin-left: 6%;
+		}
+		
+		.blog-icon {
+			padding: 8px;
+		}
+		
+		.blog-image {
+			width: 90%;
+			height: auto;
+			margin-left: 5%;
+			margin-right: 5%;
+			padding-bottom: 3%;
+			padding-top: 1%;	
+		}
+		.recommended-info {
+			font-size: 0.7rem;
+			margin-bottom: 0;
+		}
+		.recommended {
+			border: 1px solid #ccc;
+			padding: 2%;
+			margin: 5%;
+		}
+		
+		.recommended-link {
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
 </html>
