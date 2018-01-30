@@ -18,7 +18,7 @@
 		padding: 0;
 	}
 	
-	@media screen and (min-width: 571px) {
+	@media screen and (min-width: 578px) {
 		
 		.title{
 			display: inline-block;
@@ -33,7 +33,7 @@
 		}
 	}
 	
-	@media screen and (max-width: 570px) {
+	@media screen and (max-width: 577px) {
 		
 		.title{
 			display: inline-block;
