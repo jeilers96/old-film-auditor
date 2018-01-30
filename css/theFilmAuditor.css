@@ -65,7 +65,7 @@
 		background-color: white;
 	}
 	
-	@media screen and (min-width 401px) {
+	@media screen and (min-width: 401px) {
 		.tile{
 			display: none;
 			width: 25%;
