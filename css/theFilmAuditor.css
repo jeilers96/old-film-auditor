@@ -25,7 +25,6 @@
 	}
 	.title{
 		display: inline-block;
-		/*width: 35%;*/
 		margin-left: 1%;
 		margin-top: 2%;
 	}
@@ -65,7 +64,14 @@
 		background-color: white;
 	}
 
-	
+	.tile{
+		display: none;
+		width: 25%;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-bottom: 2%;
+		margin-top: 3%;
+	}
 	.card:hover {
 		box-shadow: 0 15px 21px 0 rgba(0,0,0,0.3);
 	}
