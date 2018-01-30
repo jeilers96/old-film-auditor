@@ -65,7 +65,7 @@
 		background-color: white;
 	}
 	
-	@media screen and (min-width: 401px) {
+	@media screen and (min-width: 1011px) {
 		.tile{
 			display: none;
 			width: 25%;
@@ -75,6 +75,18 @@
 			margin-top: 3%;
 		}
 	}
+	
+	@media screen and (min-width: 401px) and (max-width: 1010px) {
+		.tile{
+			display: none;
+			width: 40%;
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-bottom: 2%;
+			margin-top: 3%;
+		}
+	}
+	
 	@media screen and (max-width: 400px) {
 		.tile {
 			display: none;
