@@ -73,6 +73,18 @@
 		margin-bottom: 2%;
 		margin-top: 3%;
 	}
+	
+	@media screen and (max-width: 401px) {
+		.tile {
+			display: none;
+			width: 70%;
+			margin-left: 14%;
+			margin-right: 14%;
+			margin-bottom: 2%;
+			margin-top: 3%;
+				
+		}
+	}
 	.card:hover {
 		box-shadow: 0 15px 21px 0 rgba(0,0,0,0.3);
 	}
