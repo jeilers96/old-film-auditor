@@ -64,17 +64,18 @@
 		transition: 0.3s;
 		background-color: white;
 	}
-
-	.tile{
-		display: none;
-		width: 25%;
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-bottom: 2%;
-		margin-top: 3%;
-	}
 	
-	@media screen and (max-width: 401px) {
+	@media screen and (min-width 401) {
+		.tile{
+			display: none;
+			width: 25%;
+			margin-left: 4%;
+			margin-right: 4%;
+			margin-bottom: 2%;
+			margin-top: 3%;
+		}
+	}
+	@media screen and (max-width: 400px) {
 		.tile {
 			display: none;
 			width: 70%;
