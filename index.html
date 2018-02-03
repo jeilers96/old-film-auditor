@@ -26,7 +26,7 @@
 			</div>
 			
 		</div>
-		<ul class="filter">
+		<!--<ul class="filter">
 			<li class="filter-icon"><a href="#">&#9776;</a></li>
 			<li><a class ="catSelector" id="activeCat" href="javascript:filterSelection('All')">All</a></li>
 			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Audits')">Film Reviews</a></li>
@@ -34,7 +34,16 @@
 			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Film-Analyses')">Film Analyses</a></li>
 			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Oscars')">The Oscars</a></li>
 			<li><a class ="catSelector" id ="" href="javascript:filterSelection('Miscellaneous')">Miscellaneous</a></li>
-		</ul>
+		</ul>-->
+		<div class="filter" id="filterNav">
+			<a class="hamburger" href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">&#9776;</a>
+			<a class ="catSelector" id="activeCat" href="javascript:filterSelection('All')">All</a>
+			<a class ="catSelector" id ="" href="javascript:filterSelection('Film-Audits')">Film Reviews</a>
+			<a class ="catSelector" id ="" href="javascript:filterSelection('lists')">Lists</a>
+			<a class ="catSelector" id ="" href="javascript:filterSelection('Film-Analyses')">Film Analyses</a>
+			<a class ="catSelector" id ="" href="javascript:filterSelection('Oscars')">The Oscars</a>
+			<a class ="catSelector" id ="" href="javascript:filterSelection('Miscellaneous')">Miscellaneous</a>
+		</div>
 		<div>
 			<div class="tile Miscellaneous" data-include="ratingTile"></div>
 			<div class="tile Film-Audits" data-include="theRoomTile"></div>
@@ -52,27 +61,60 @@
 			setActiveSelection();
 		</script>
 		<style>
-			.filter-icon {
+			.filter {
+				overflow: hidden;
+				background-color: #333;
+				width: 100%;
+			}
+
+			.filter a {
+				float: left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
+
+			.filter a:hover {
+				background-color: white;
+				color: black;
+			}
+
+			.filter .hamburger {
 				display: none;
 			}
-			@media screen and (max-width: 700px) {
-				.filter li:not(:first-child) {display: none;}
-				.filter li {
-					float: left;
-					padding-left: 3%;
-					padding-right: 3%;
-					padding-top: 1%;
-					padding-bottom: 1%;
-					width: 100%;
+
+			@media screen and (max-width: 709px) {
+				.filter a {
+					display: none;
 				}
-				
-				.filter-icon {
+				.filter .hamburger {
+					float: right;
 					display: block;
 				}
 				
-				.filter-icon a:hover {
-					text-decoration: underline;
+				.filter a:hover {
+					background-color: lightgrey;
+					color: black;
 				}
+			  
+				.filter.responsive {
+					position: relative;
+				}
+				.filter.responsive a {
+					float: none;
+					text-align: left;
+					display: block;
+				}
+				
+				.filter.responsive .hamburger {
+					right: 0;
+					position: absolute;
+					top: 0;
+				}
+				
 			}
 		</style>
 	</body>
