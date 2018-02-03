@@ -158,36 +158,61 @@
 		color: #2A2B2A;
 	}
 	
-	/*.filter {
-		list-style-type: none;
-		margin: 0;
+	.filter {
 		overflow: hidden;
-		border-bottom: 3px solid;
-		border-color: #3A3A3A;
-		background-color: dimgrey;
+		background-color: #333;
+		width: 100%;
 	}
 
-	.filter li {
+	.filter a {
 		float: left;
-		padding-left: 3%;
-		padding-right: 3%;
-		padding-top: 1%;
-		padding-bottom: 1%;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
 	}
 
-	.filter li a {
-		text-decoration: none;
+	.filter a:hover {
+		background-color: white;
 		color: black;
 	}
-	
-	.filter li a:hover:not(#active) {
-		text-decoration: underline;
+
+	.filter .hamburger {
+		display: none;
 	}
-	
-	#activeCat{
-		text-decoration: underline;
+
+	@media screen and (max-width: 709px) {
+		.filter a {
+			display: none;
+		}
+		.filter .hamburger {
+			float: right;
+			display: block;
+		}
+		
+		.filter a:hover {
+			background-color: lightgrey;
+			color: black;
+		}
+	  
+		.filter.responsive {
+			position: relative;
+		}
+		.filter.responsive a {
+			float: none;
+			text-align: left;
+			display: block;
+		}
+		
+		.filter.responsive .hamburger {
+			right: 0;
+			position: absolute;
+			top: 0;
+		}
+		
 	}
-	*/
 	.show{
 		display: inline-block;
 	}
@@ -517,17 +542,140 @@
 		
 	}
 	
-	.blog-body {
+	@media screen and (min-width: 1018px) {
+		
+		.blog-body {
 		float: left;
 		width: 70%;
 		margin-left: 5%;
+		}
+		
+		.blog-side-bar {
+			float: right;
+			width: 25%;
+			padding-top: 15%;
+		}
+		
+		.follow-title {
+			margin-top: 20%;
+		}
+	}
+	@media screen and (min-width: 773px) and (max-width: 1017px) {
+		.blog-title {
+			font-size: 3rem;
+			margin-left: 4%;
+		}
+			
+		.blog-body {
+			float: left;
+			width: 60%;
+			margin-left: 5%;
+		}
+		
+		.blog-side-bar {
+			float: right;
+			width: 35%;
+			padding-top: 15%;
+		}
+		
+		.follow-title {
+			margin-top: 20%;
+		}
 	}
 	
-	.blog-side-bar {
-		float: right;
-		width: 25%;
-		padding-top: 15%;
+	@media screen and (min-width: 542px) and (max-width: 772px) {
+		.blog-title {
+			font-size: 2.6rem;
+			margin-left: 4%;
+		}
+		.blog-body {
+			float: left;
+			width: 80%;
+			margin-left: 8%;
+			margin-right: 12%
+		}
+		
+		.blog-side-bar {
+			width: 55%;
+			padding-top: 15%;
+			margin-left: 22.5%;
+			margin-right: 22.5%;
+		}
+		
+		.follow-title {
+			margin-top: 0;
+		}
+		
+		.follow-images {
+			margin-bottom: 5%;
+		}
 	}
+	
+	@media screen and (min-width: 414px) and (max-width: 542px) {
+		.blog-title {
+			font-size: 2rem;
+			margin-left: 4%;
+		}
+		.blog-body {
+			float: left;
+			width: 80%;
+			margin-left: 8%;
+			margin-right: 12%
+		}
+		
+		.blog-side-bar {
+			width: 55%;
+			padding-top: 15%;
+			margin-left: 22.5%;
+			margin-right: 22.5%;
+		}
+		
+		.follow-title {
+			margin-top: 0;
+		}
+		
+		.follow-images {
+			margin-bottom: 5%;
+		}
+		.blog-info {
+			margin-left: 6%;
+			font-size: .8rem;
+		}
+	}
+	
+	@media screen and (max-width: 413px) {
+		.blog-title {
+			font-size: 1.8rem;
+			margin-left: 4%;
+		}
+		.blog-body {
+			float: left;
+			width: 80%;
+			margin-left: 8%;
+			margin-right: 12%
+		}
+		
+		.blog-side-bar {
+			width: 80%;
+			padding-top: 15%;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		
+		.follow-title {
+			margin-top: 0;
+		}
+		
+		.follow-images {
+			margin-bottom: 8%;
+		}
+		.blog-info {
+			margin-left: 6%;
+			font-size: .8rem;
+		}
+	}
+	
+	
 	
 	.blog-side-bar h2 {
 		text-align: center;
@@ -549,11 +697,6 @@
 		width: 15%;
 		margin-left: 4%;
 		margin-right: 12%;
-	}
-	
-	.blog-title {
-		font-size: 3rem;
-		margin-left: 4%;
 	}
 	
 	.blog-info {
