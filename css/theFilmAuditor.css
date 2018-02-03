@@ -544,6 +544,11 @@
 	
 	@media screen and (min-width: 1018px) {
 		
+		.blog-title {
+			font-size: 3rem;
+			margin-left: 4%;
+		}
+		
 		.blog-body {
 		float: left;
 		width: 70%;
