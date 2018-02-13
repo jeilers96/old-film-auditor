@@ -23,6 +23,7 @@ function setActiveSelection(){
 	}
 
 }
+
 function addClass(element, name){
 	var i, arr1, arr2;
 	arr1 = element.className.split(" ");
@@ -62,4 +63,5 @@ $(function(){
 		$(this).load(file);
 	});
 });
+
 
