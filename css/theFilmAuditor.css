@@ -735,7 +735,7 @@
 		color: black;
 	}
 	
-	.recommended-link a:hover {
+	.recommended-link:hover {
 		text-decoration: underline;
 	}
 	
