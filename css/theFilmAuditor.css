@@ -106,7 +106,7 @@
 		}
 	}
 	
-	@media screen and (min-width: 401px) and (max-width: 1010px) {
+	@media screen and (min-width: 557px) and (max-width: 1010px) {
 		.tile{
 			display: none;
 			width: 40%;
@@ -117,7 +117,7 @@
 		}
 	}
 	
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 556px) {
 		.tile {
 			display: none;
 			width: 70%;
