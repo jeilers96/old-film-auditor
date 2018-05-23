@@ -1,0 +1,29 @@
+a {
+  color: #f04c4c;
+}
+.rating {
+  margin-left:2%;
+  display: inline-block;
+}
+
+.rating-table td {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media screen and (min-width: 436px) {
+  .rating-table {
+    margin-left: 7%;
+
+  }
+}
+@media screen and (max-width: 435px) {
+  .rating-table {
+    font-size: .88rem;
+    margin-left: 0;
+  }
+}
+
+.review-container {
+  margin-left:5%;
+}
