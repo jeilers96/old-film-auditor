@@ -26,13 +26,13 @@
 			<form method="POST" action="https://formspree.io/thefilmauditor@gmail.com" class="contact-form">
 
 				<h2>Name/Business:</h2>
-				<input type="text" name="name" class="contact-form-inputs" placeholder="Your name">
+				<input type="text" name="name" class="contact-form-inputs" placeholder="Your name" pattern="^[a-zA-Z ]*$" title="a-z, A-Z, or spaces" required>
 				<br>
 				<h2>E-mail:</h2>
-				<input type="email" name="_replyto" class="contact-form-inputs" placeholder="Your email">
+				<input type="email" name="_replyto" class="contact-form-inputs" placeholder="Your email" required>
 				<br>
 				<h2>Message:</h2>
-				<textarea rows="4" cols="50" class="contact-text-area" name="message" placeholder="Your message"></textarea>
+				<textarea rows="4" cols="50" class="contact-text-area" name="message" placeholder="Your message" required></textarea>
 				<br>
 				<button type="submit" class="contact-sub">Send</button>
 			</form>
