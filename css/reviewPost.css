@@ -27,3 +27,7 @@ a {
 .review-container {
   margin-left:5%;
 }
+
+.review-bottom {
+  padding-bottom: 2rem;
+}
